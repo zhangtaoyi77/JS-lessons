@@ -64,7 +64,7 @@ arr.length=2;
 console.log(arr);
 3
 (2) ["apple", "pear"]
-//？？？？？
+//因为基本数据类型，都有包装对象，数组为对象类型（引用类型），将会改变
 
 //typeof是基本数据类型
 //instanceof 引用类型变量，左侧为对象，右侧为类型，结果为true false

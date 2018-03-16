@@ -62,7 +62,7 @@ var str13 = "abcdefghijklmn";
 var str14 = str13.substr(2,5);//后一个参数代表截取长度 
 console.log(str13,str14);//str13 未受到破坏 abcdefghijklmn cdefg
 
-var str15 = str13.substring(2,5);//后一个参数代表第几个end 截取到第几个
+var str15 = str13.substring(2,5);//后一个参数代表第几个end 截取到第几个，不包括本身
 console.log(str13,str15);//str13 未受到破坏 abcdefghijklmn cde
 
 
