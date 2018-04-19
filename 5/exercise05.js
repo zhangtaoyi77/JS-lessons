@@ -38,39 +38,14 @@ for (var i = 0; i < 5; i++) {
 
 
 
-/* 闭包 */
-function f1(){
-    var x=1;
-    function f2(){
-        return x++;
-    }
-    return f2;
-    }
-    var f3=f1();
-    console.log(f3());//1
-    console.log(f3());//2
 
-function createInc(starValue){
-    return function(step){
-        starValue+=step;
-        return starValue;
-    }
-}
-var inc=createInc(5);
-var inc2=createInc(5);
-console.log(inc(1));//6
-console.log(inc(2));//8  形成闭包，变量不会被释放
-console.log(inc(1));
-console.log(inc2(1));//重新创建了一个闭包
 
-var tmp =100;
-function foo(x){
-    var tmp=3;
-    return function (y){
-        console.log(x+y+(++tmp));
-    }
-}
-var fee=foo(2);
-fee(10);
-fee(10);
-fee(10);
+
+
+
+
+
+
+
+
+
